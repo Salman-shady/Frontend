@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CASCADING STYLE SHEETS</title>
+    <!-- EXTERNAL -->
+    <link rel="stylesheet" href="style.css">
+    <!-- INTERNAL -->
+    <style>
+
+Back ground 
+#bg{
+    background-color: bisque;
+}
+body{
+    background-color: whitesmoke;
+}
+/*  BAck ground image IMAGE */
+#bg{
+    background-image: url('IMG-20220203-WA0019.jpg');
+    background: repeat;
+    /* backgroung imagr y x center */
+}
+/* EXTERNAL */
+P{
+    font-size: 15px;
+    font-weight: bold;
+    font-family: cursive;
+    color: royalblue;
+}
+/* ELEMENTS */
+P1{
+    font-size: 15px;
+    font-weight: bold;
+    font-family: cursive;
+    color: darkorange
+    
+}
+/* ID */
+#p5{
+    font-size: 15px;
+    font-weight: bold;
+    font-family: cursive;
+    color: greenyellow;
+}
+/* CLASS */
+
+.BROWN-TEXT{
+    font-size: 15px;
+    font-weight: bold;
+    font-family: cursive;
+    color: brown
+}
+.UNDERLINE-H{
+    text-decoration: underline;
+}
+P2{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: cursive;
+    color: royalblue;
+}
+/* group selector */
+div2,p7,.span,span,#p6,.skyblue-text{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(13, 247, 165);
+}
+/* all main headings */
+*{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: monospace;
+    color: rgb(187, 38, 167);
+} 
+
+
+        H1{
+    font-size: 15px;
+    font-weight: bold;
+    font-family: cursive;
+    color: red;
+}
+    </style>
+</head>
+<body>
+
+    <div>
+        <p id="bg">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eos, incidunt ullam accusantium sequi officiis exercitationem reiciendis quaerat praesentium! Asperiores animi quas consectetur delectus eligendi? Dolorum eaque nobis repudiandae eligendi neque! Alias provident, natus eos enim possimus autem totam quo reiciendis optio, eveniet libero! Sint provident eaque natus rerum in ea quidem autem quod eveniet et architecto deserunt dolor totam quos magnam harum enim, voluptates saepe deleniti amet neque nihil aperiam dicta. Dolores nam voluptates laborum veniam alias accusamus molestiae, iusto tenetur. Qui sequi id non saepe itaque dolorum vitae deleniti nulla ducimus alias facilis, ab numquam eligendi vero mollitia soluta explicabo quo quisquam eaque provident. Similique sint cum molestiae! Laborum, dignissimos autem quasi nam, ad ratione quia omnis sint error impedit distinctio officiis perferendis eos saepe qui dolor non, quos ducimus? Aspernatur alias facilis est nihil voluptatem maxime quis non cum, magnam saepe excepturi quas provident architecto pariatur porro sunt error voluptates at natus. Officia voluptatibus ipsum provident dolorem quos consequatur earum optio! Incidunt laudantium hic doloribus facilis expedita nostrum, eveniet soluta quam vero et aliquam ipsam quo illum quibusdam fuga ratione odio corporis explicabo quae aut deserunt eius esse. Quis vitae iure mollitia ipsum nam molestiae tempore architecto. ipsum dolor sit, amet consectetur adipisicing elit. Quisquam odit dolores iure deleniti quasi ducimus asperiores facilis nesciunt impedit quidem, quos modi adipisci veritatis provident similique quae ipsum amet voluptates?2 ipsum dolor sit amet consectetur adipisicing elit. Quam aut nisi quasi necessitatibus impedit praesentium quis voluptatem sequi soluta voluptatum corrupti molestiae ad illum amet, distinctio animi cumque magnam aliquid itaque, sapiente nostrum accusamus quidem? Repellat iusto fuga, quas, odit officia enim id harum similique, doloribus corrupti veritatis unde nostrum! ipsum dolor sit amet consectetur adipisicing elit. Libero a illum ex porro quia, quasi similique id? Optio exercitationem voluptates facere, reiciendis commodi, quod, voluptas nobis officiis explicabo laudantium quia?
+        </p>
+    </div>
+    <!-- EXTENAL it go to style.css -->
+    EXTERNAL
+    <P>I LOVE YOU 1</P>
+    <P>I LOVE YOU 4</P>
+    <P>I LOVE YOU 3</P><HR>
+     <!-- INTERNAL IT WONT GO STYLE.Css IT WORKS HERE IN HEAD TAG --> 
+     INTERNAL  
+    <h1>LOVE YOU TOO 1</H1>
+    <H1>LOVE YOU TOO 4</H1>
+    <H1>LOVE YOU TOO 3</H1><HR>
+
+    <!-- COLOUR IS APPLYING FOR EVERY 1 4 3 BUT I NEED ONLY TO COLOR IN 4 SO WE NEED TO USE INLINE TAG-->
+    <!-- INLINE TAG -->
+    INLINE Style attribute
+    <div>
+    <h2>I LOVE YOU</h2>
+    <P style="color: red; font-size: 15px;">I KILL YOU </P>
+    <h2>I MISS YOU</h2><hr>
+    </div>
+    
+    <!-- CSS SELECTOR-->
+    <!-- 1.Elemnt 2.ID 3.CLASS -->
+
+    <!-- ELEMENT SELECTOR it means full -->
+    <h1>ELEMENT</h1>
+    <p1>paragraph 1</p1><BR>
+    <p1>paragraph 2</p1><BR>
+    <p1>paragraph 3</p1><BR>
+    <p1>paragraph 4</p1><hr>
+
+    <!-- #ID particular element to style SINGLE id=store only one element -->
+    <H3>ID</H3>
+    <p2>paragraph 1</p2><br>
+    <p2 id="p5">paragraph 2</p2><br>
+    <p2>paragraph 3</p2><br>
+    <p2>paragraph 4</p2><br><HR>
+
+    <!--CLASS . CATEGORY IS USED TO AT A TIME class=it can store multipel items  -->
+    <p3 style="font-size: 40px;">CLASS</p3><br>
+    <h1 ID="H" class="BROWN-TEXT UNDERLINE-H"><p style="font-size: 25px;">HEADING</p></h1>
+    <p class="BROWN-TEXT">paragraph 1</p>
+    <p id="p2">paragraph 2</p>
+    <p>paragraph 3</p>
+    <p CLass="BROWN-TEXT">paragraph 4</p><hr>
+
+    <!-- grouping selector -->
+    <div2>
+        GOUTHAM WHERE ARE YOU
+    </div2>
+    <span>
+        iam in bangalore
+    </span><br>
+    <p6 id="p6">Hope your doing well</p6><br>
+    <span class="skyblue-TEXT UNDERLINE-H"><p7 style="width: 20;">Thanks hope u too doing well</p7></span2><br><hr>
+
+    <P4 style="font-size: 25px ;">colour</p4><br>
+    <a href="https://htmlcolorcodes.com/"><p5 style="font-size: 20px;" >color code</p5></a><hr>
+s
+
+    
+</body>
+</html>

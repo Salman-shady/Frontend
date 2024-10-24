@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        :root {
+            --navbar-bg-color-1: #FF5733;
+            --navbar-bg-color-2: #33FF57;
+            --navbar-bg-color-3: black;
+            --navbar-bg-color-home: #e40dae;
+            --navbar-bg-color-about: #661fc2;
+            --navbar-bg-color-services: #1aa5d7;
+            --navbar-bg-color-contact: #0f0e0e;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: flex-end;
+            background: var(--navbar-bg-color-1);
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .navbar:hover {
+            background: var(--navbar-bg-color-2);
+            transition: background 0.5s;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .navbar a:hover {
+            border: 2px solid var(--navbar-bg-color-3);
+        }
+
+        .navbar a:hover:first-child {
+            border: 2px solid violet;
+        }
+
+        .navbar a:nth-child(1):hover {
+            background: var(--navbar-bg-color-home);
+        }
+
+        .navbar a:nth-child(2):hover {
+            background: var(--navbar-bg-color-about);
+        }
+
+        .navbar a:nth-child(3):hover {
+            background: var(--navbar-bg-color-services);
+        }
+
+        .navbar a:nth-child(4):hover {
+            background: var(--navbar-bg-color-contact);
+        }
+
+        .main {
+            margin: 1% 0 0 8%;
+            border: 2px solid black;
+            background-color: rgb(155, 113, 247);
+            width: 85%;
+            padding: 20px;
+            border-radius: 20px;
+        }
+
+        .box {
+            display: flex;
+
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .left, .right {
+            border: 2px solid black;
+            width: 45%;
+            height: 60vh;
+            background-color: #e760c5;
+            margin: 2.5%;
+        }
+
+        .text-div {
+            margin: 2% 0 0 8%;
+            border: 2px solid black;
+            width: 85%;
+            height: 20vh;
+            background-color: lightblue;
+            border-radius: 20px;
+            padding: 20px;
+        }
+
+        .text-div p {
+            text-align: justify;
+        }
+
+        .footer {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            margin-top: 2%;
+        }
+
+        /* Logo styles */
+        .logo {
+            position: fixed;
+            top: 50%;
+            right: 0;
+            border-radius: 100%;
+            transform: translateY(-50%);
+        }
+        @media screen and (max-width: 350px) {
+            .navbar {
+                flex-direction: column;
+            }
+
+            .navbar a {
+                margin: 5px;
+                padding: 5px;
+            }
+        }
+        @media (max-width: 455px) {
+            .main {
+                margin: 2% 0;
+                padding-left: 10%;
+            }
+
+            .box {
+                flex-direction: column;
+            }
+
+            .left, .right {
+                width: 100%;
+            }
+        }
+        @media (max-width: 455px) {
+            .main {
+                margin: 1% 0;
+            }
+
+            .left, .right {
+                width: 100%;
+            }
+            .text-div{
+            
+            border: 2px solid rgb(15, 14, 14);
+            width: 75%;
+            height: 25vh;
+            background-color: lightblue;
+            border-radius: 20px;
+            padding: 20px;
+            }
+        }
+        @media screen and (max-width: 350px) {
+            .main{
+                margin: 2% 0;
+                padding-left: 1%;
+            }
+        }
+       
+
+     
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="https://www.google.com">Home</a>
+        <a href="https://www.google.com">Services</a>
+        <a href="https://www.google.com">About</a>
+        <a href="https://www.google.com">Contact</a>
+    </div>
+
+    <div class="main">
+        <div class="box">
+            <div class="left"></div>
+            <div class="right"></div>
+        </div>
+    </div>
+
+    <div class="text-div">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem error maxime nobis, facere commodi dolorum explicabo, quam sapiente aperiam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis praesentium nam deserunt laudantium odit consequuntur molestiae quia officia minus ad...</p>
+    </div>
+
+    <div class="footer">
+        <p>© 2023 Salman Company</p>
+    </div>
+
+    <!-- Logo image -->
+    <img class="logo" src="https://i.playboard.app/p/AATXAJzKAcKhT1nk--c6maiu7lwYgF5ZqF8zKCCtDis3Ag/default.jpg" width="10%" alt="Your Logo">
+</body>
+
+</html>

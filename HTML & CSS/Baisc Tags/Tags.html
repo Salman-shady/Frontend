@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>learn HTML </HTML></title>
+</head>
+<body>
+                 
+<!-- Headings -->
+<h1>First Heading</h1>
+<h2>Second Headng</h2>
+<h3>Third Heading</h3>
+<h4>Fourth Heading</h4>
+<h5>Fifth Heading</h5>
+<h6>Sixth Heading</h6><hr>
+
+<!-- <div>->occupies enter row BLOCK ELEMENT
+     <span>->inline element it means which i requred -->
+<div style="background-color: rgb(177, 8, 101)">
+<h4>Iam div - dis is sub element</h4>
+ Here u can see div area - dis is div content
+</div><hr>
+                
+ <span style="background-color: rgb(194, 34, 170)">
+ <h4>Iam div - dis is sub element</h4>
+  Here u can see div area - dis is span content
+  </span><br><hr>
+                
+ <div>I'am div -> It capture entire row also called block element</div>
+ <div>I'am div -> It capture entire row also called block element</div>
+ <span>I'am span -> Appended in the same row also called inline element it means which i required</span>
+ <span>I'am span -> Appended in the same row also called inline element it means which i required</span><hr>
+
+<!-- Paragraphs -->
+<p>Paragraph --> Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque dolore quam expedita tenetur natus, voluptatum saepe dicta ratione corrupti maiores maxime illum architecto quisquam quidem amet, animi numquam voluptates pariatur.</p><hr>
+
+<!-- LIST -->
+<!-- Unordered List -->
+<p>unorder list have different types="square""circle""disc" <!-- it is used for bullets like square circle disc --></p>
+<ul type="disc">
+  <li>Python</li>
+  <li>Java</li>
+  <li>DevOps</li>
+  <li>Cloud Computing</li>
+  </ol>
+</ul>
+
+<!-- Ordered List -->
+
+<p>order list have different Types="1" "a" "A" "I" "i" <!-- OR IS COUNTING A NUMBER WE HAVE 123 ABC abc ROMAN NUMBER--></p>
+<ol>
+    <li>Python</li>
+    <li>Java</li>
+    <li>DevOps</li>
+    <li>Cloud Computing</li>
+</ol>
+
+<ol type="I">
+  <li>Python</li>
+  <li>Java</li>
+  <li>DevOps</li>
+  <li>Cloud Computing</li>
+</ol><hr>
+
+<!-- OPTION -->
+<select>
+    <option>1.BANGALORE</option>
+    <option>2.TUMKUR</option>
+    <option>3.HUBLI</option>
+    <option>4.MANGALORE</option>
+    <option>5.MYSORE</option><br>
+</select><br><BR>
+  
+<select>
+    <!-- value is good practice to use and it use to capture the value what ever we selected & send it to server -->
+    <option value="BANGALORE">BANGALORE</option>
+    <option value="TUMKUR">TUMKUR</option>
+    <option value="HUBLI">HUBLI</option>
+    <option value="MANGALORE" text>MANGALORE</option>
+    <!-- disable it shows bit we can not click -->
+    <option value="MYSORE" Selected>MYSORE</option><br>
+    <!-- selected is used to show in text -->
+</select><hr
+
+<!-- Definition List -->
+<dl>
+    <p>Definition List</p>
+    <dt><b>HTTPS</b></dt>
+    <dd>This stands for Hyper Text Transfer Protocol Secure</dd>
+    <dt><b>HTTP</b></dt>
+    <dd>This stands for Hyper Text Transfer Protocol</dd>
+</dl><br/><hr>
+
+<!-- SUBSCRIPT->DOWN & SUPERSCRIPT->UP TAG-->
+<pre><U>1.SUBSCRIPT</U> 2. <U>SUPERSCRIPT</U></pre>
+    <p>1<sub>2+3<sub>3-5</sub></p>
+    <P>1<SUP>2+3<sup>3-5</SUP></P>
+
+      <pre>
+pre tag --> jath<b><u>i</u></b>n
+              sa<b><u>l</u></b>man
+             var<b><u>u</u></b>n
+      </pre><hr>   
+
+<!--Other Input elements -->
+<h4> Other Types of Input</h4>
+<div>
+    <label> Gender: </label>
+    <input type="radio" name="gender" value="Male"> <span> Male</span> 
+    <input type="radio" name="gender" value="Female"><span>Female </span>
+    <br/>
+    <br/>
+    <label> Skills: </label>
+    <input type="checkbox" value="javascript"> <span>Javascript</span>
+    <br/>
+    <input type="checkbox" value="react"> <span>React</span>
+    <br/>
+    <input type="checkbox" value="node"> <span>Node</span>
+    <br/>
+    <input type="checkbox" value="mongo"> <span>Mongo</span>
+    <br/><br/>
+    <input type="color"/>
+    <br/>
+    <br/>
+    <input type="date" />
+    <br/>
+    <br/>
+    <input type="email" placeholder="Enter valid email"/>
+    <br/>
+    <br/>
+    <input type="password" placeholder="password"/>
+    <br/>
+    <br/>
+    <input type="number" placeholder="Number"/><br/>
+    
+    <p>radio wont work if ur using only type</p>
+    <span><input type="checkbox">checkboxx</span>
+    <span><input type="checkbox">checkboxx</span>
+    <span><input type="radio" name="CHECKBOSS">checkboxss</span>
+     <LABEL><span><input type="radio" name="CHECKBOSS">checkboxss</span></LABEL><hr/>
+
+<!--Forms -->
+
+</div>
+<h4> Form Elements</h4>
+<form>
+  <div>
+    <LABEL>Name:</LABEL><input type="text" id="name" name="name"/>
+    <br/>
+    <br/>
+    <LABEL>Password:</LABEL><input type="password" id="password"/>
+    <br/>
+    <br/>
+    <label>Message:</label><textarea></textarea>
+    <div>
+      <textarea name="feedback" id="01" placeholder="feedback"></textarea>
+    </div>
+    <br/>
+    <br/>
+    <input type="checkbox" name="gender" value="Male"> <span>HTML</span> 
+    <input type="checkbox" name="gender" value="Female"><span>CSS </span>
+    <br/>
+    <label> Gender: </label>
+    <input type="radio" name="gender" value="Male"> <span> Male</span> 
+    <input type="radio" name="gender" value="Female"><span>Female </span>
+    <br/><br/>
+    <input type="submit" value="Submit Form"/><hr>
+</div>
+</form><hr><br/>
+
+<!-- Tables -->
+<h2>CREATE TABLE</h2>
+<table>
+    <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+    </tr>
+    <tr>
+    <td>Darshan</td>
+    <td>thugudeepa</td>
+    <td>50</td>
+    </tr>
+    <tr>
+    <td>Puneeth</td>
+    <td>Rajkumar</td>
+    <td>47</td>
+    </tr>
+</table>
+
+<H2>REGiSTRATION FORM</H2><BR>
+<form>
+<table border="3">
+  <thead>
+    <tr>
+      <td colspan='2' style="text-align: center">
+         <b>Bank Registration From</b>
+      </td>
+    </tr>
+
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <label>First Name:</label>
+      </td>
+      <td>
+        <input type="text" placeholder="Enter First Name"/>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label>Last Name:</label>
+      </td>
+      <td>
+        <input type="text" placeholder="Enter Last  Name"/>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label>Aadhar Number:</label>
+      </td>
+      <td>
+        <input type="number"/>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label>Gender:</label>
+      </td>
+      <td>
+        <input type="radio" name='gender'/> <span> Male</span>
+        <input type="radio" name='gender'/> <span> Female</span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label>City:</label>
+      </td>
+      <td>
+       <select>
+        <option>Select</option>
+        <option>Delhi</option>
+        <option>Banglore</option>
+        <option>Chennai</option>
+        <option>Hydrabad</option>
+       </select>
+      </td>
+    </tr>
+    <tr>
+     <td colspan="2" style="text-align: center">
+      <input type="submit" value="submit"/>
+      <input type="reset" />
+     </td>
+    </tr>
+  </tbody>
+</table>
+</form><hr>
+
+<h3>ACTION AND REACTION</h3>
+<form action="/action_page.php">
+<label for="fname">First name:</label>
+<input type="text" id="fname" name="fname" size="50"><br><br>
+<label for="pin">PIN:</label>
+<input type="text" id="pin" name="pin" maxlength="4" size="4"><br><br>
+<input type="submit" value="Submit">
+</form><hr>
+
+    <form action="/action.php"></form>
+            <input type="text" placeholder="feedback"><br><br>
+            <!-- text shows what u written -->
+            <input type="password" placeholder="password"><br>
+            <!-- it does not show text it shows in dots bullets form-->
+            user name: <input type="text"/>
+            <div>
+                <label><input type="checkbox"/><span>front end</span></label>
+                <label><input type="checkbox"/> <span>back end</span></label>
+                <label><input type="checkbox"/> <span>full stach</span></label> 
+            </div>
+             <br>
+            
+              <label><input type="radio" name="gender"><span>male</span></label>
+              <label><input type="radio" name="gender"><span>femlae</span></label>
+              <label><input type="radio" name="gender"><span>others</span></label>
+        <p>&</p>
+            <label for="101">
+                <input type="radio" value="class 11" name="class" id="101">class 11
+            </label>
+            <label for="102">
+                <input type="radio" value="" name="class" id="102">class 12
+            </label>
+            <br>
+    <textarea name="introduce yourself" placeholder="Introduce yourself" rows=5 colums="10"></textarea><br>
+    <input type="submit" value="submit"><br><hr>
+
+    <div>ARROW code = &#8592;</div>
+    <p>Refer dis link for more arrow in html <a href="https://www.w3schools.com/charsets/ref_utf_arrows.asp" target="main">HTML ARROWS</a><hr></p>
+    <!-- FONTS  -->
+    <!-- pre tag used paragraph as it is print -->
+    <p><u>FONTS</u></p>
+    <pre>
+    <b>BOLD        I</b><br>
+    <i>ITALIC     LOVE</i><br>
+    <U>UNDERLINE  YOU</U>
+    <P>AFTER SOME DAYS</P>
+    <big>   I KILL YOU  </big><br>
+    <small> I MISS  YOU </small>
+    </pre><hr>
+
+    <!-- Links -->
+    <!-- dis is called absolute link we ae giving another website to visit -->
+    <a href="https://www.google.com/">open google</a><br><br><hr>
+    <!--ANCHOR TAG-->
+    <P><U>Absolute link</U></P>
+    <a href="https://www.makemytrip.com/hotels/vbis_inn_tumkur-details-tumkur.html">varun PUB</a><br>
+    <!-- dis is called absolute link we ae giving another website to visit -->
+    <p><u>inside image link</u></p>
+    <a href="https://www.youtube.com/watch?v=BsDoLVMnmZs&t=7392s"><img src="images/janhvi-kapoor.jpg" height="100"></a><br><hr>
+    <!-- website can be open with image also -->
+
+    <P><U>REALTIVE link - own link created by ourself</U></P>
+    <a href="/PYAR.html">PYAR</a><hr><br>
+    <!-- dis is called REALTIVE link which we have created  -->
+
+    <a href="https://www.w3schools.com/charsets/ref_utf_arrows.asp" target="main">HTML ARROWS</a><hr>
+    <!-- These open a new tab -->
+
+ <!-- IFRAME TAG WEBSITE INSIDE WEBSITE-->
+
+ <h2>IFRAME</h2>
+ <iframe width="250" height="250" src="https://www.youtube.com/embed/UmnCZ7-9yDY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+ <!-- available video and given permison try google -->
+ <iframe src="https://google.com"></iframe><br><br>
+ 
+ <video src="/video_20210907_133607.mp4" controls loop autoplay width="250" length="250">my bois</video>
+ <br><hr>
+ <p>REFER THESE LINKS</p> 
+ <a href="https://www.pivotaltracker.com/n/projects/2444925/stories/172475739">prototype</a><br><br><hr>
+
+
+<p>IMAGE TAG --> Its is also self closing tag</p>
+<img src="images/janhvi-kapoor.jpg" height="100"/><br>
+<p>If image failed alternate by using <u>alt=""</u> <img src="images/janhviii -kapoor.jpg" alt="images are currently out of sync" height="100"/><br></p>
+<hr/>
+<p>WIDTH IMG WILL NOT BE CLEAR</p>
+<!-- u can also give width but image will not be clear -->
+<img src="images/janhvi-kapoor.jpg" height="100" width="200"/>
+<br><hr>
+<P>WITHOUT ANY HEIGHT & WIDTH</P>
+<img src="images/janhvi-kapoor.jpg" alt="janvhi image"/><hr>
+
+<h1>video adding</h1>
+<video WIDTH="500" height="500" src="/Snapchat-695034276.mp4" controls>MY HERO</video><hr>
+<pre> Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, maiores.
+                                                                              Lorem ipsum dolor sit amet.
+                                                                                             Lorem, ipsum dolor.
+</pre>
+<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, maiores.
+                                                                       Lorem ipsum dolor sit amet.
+                 Lorem, ipsum dolor.
+</p>
+
+</body>
+</html>
+
