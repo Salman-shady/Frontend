@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Random Color Boxes</title>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      margin: 10px;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    for (let i = 0; i < 500; i++) {
+        const box = document.createElement('div');
+        box.className = 'box';
+        box.style.backgroundColor = getRandomColor();
+        box.style.color = 'black';
+        box.textContent = 'Box';
+        document.body.appendChild(box);
+    }
+
+    function getRandomColor() {
+        return '#' + Math.floor(Math.random() * 14215).toString(16);
+    }
+  </script>
+</body>
+</html>

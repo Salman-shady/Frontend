@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Color Navbar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --navbar-bg-color-1: #FF5733;
+            --navbar-bg-color-2: #33FF57;
+            --navbar-bg-color-3: black;
+            --navbar-bg-color-home: #e40dae;
+            --navbar-bg-color-about: #661fc2;
+            --navbar-bg-color-services: #1aa5d7;
+            --navbar-bg-color-contact: #0f0e0e;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: flex-end;
+            background: var(--navbar-bg-color-1);
+            padding: 10px;
+        }
+
+        .navbar:hover {
+            background: var(--navbar-bg-color-2);
+            transition: background 0.5s;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .navbar a:hover {
+            border: 2px solid var(--navbar-bg-color-3);
+        }
+
+        .navbar a:first-child:hover {
+            border: 2px solid violet;
+        }
+
+        .navbar a:nth-child(1):hover {
+            background: var(--navbar-bg-color-home);
+        }
+
+        .navbar a:nth-child(2):hover {
+            background: var(--navbar-bg-color-about);
+        }
+
+        .navbar a:nth-child(3):hover {
+            background: var(--navbar-bg-color-services);
+        }
+
+        .navbar a:nth-child(4):hover {
+            background: var(--navbar-bg-color-contact);
+        }
+
+        /* Responsive Styles */
+        @media screen and (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+            }
+
+            .navbar a {
+                margin: 5px;
+                padding: 5px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="https://www.google.com">Home</a>
+        <a href="https://www.google.com">Services</a>
+        <a href="https://www.google.com">About</a>
+        <a href="https://www.google.com">Contact</a>
+    </div>
+
+</body>
+</html>

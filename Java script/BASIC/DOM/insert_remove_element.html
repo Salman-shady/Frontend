@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DOM Manipulation</title>
+</head>
+<body>
+  <div id="myDiv" class="box" data-info="example">Hello, World!</div>
+
+  <script>
+    // innerHTML
+     document.getElementById('myDiv').innerHTML = '<p>This is innerHTML content.</p>'; // Replaces content inside the div
+
+    // outerHTML
+    console.log(myDiv.outerHTML); // Outputs the entire div including its content
+
+    // textContent
+    console.log(myDiv.textContent); // Outputs the text content inside the div
+
+    // hidden property
+    myDiv.hidden = true; // Hides the div
+
+    // getAttribute, setAttribute, removeAttribute
+    const dataInfo = myDiv.getAttribute('data-info'); // Retrieves value of 'data-info' attribute
+    console.log(dataInfo); // Outputs: example
+
+    myDiv.setAttribute('title', 'New Title'); // Sets 'title' attribute with value 'New Title'
+
+    myDiv.removeAttribute('class'); // Removes the 'class' attribute from the div
+  </script>
+</body>
+</html>

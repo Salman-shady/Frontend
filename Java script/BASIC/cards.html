@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Card Design</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Poppins:wght@300&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: gray;
+            display: flex;
+            justify-content: space-evenly;
+            min-height: 100vh;
+            padding: 50px;
+        }
+
+        .container {
+            display: flex;
+            border: solid 2px rgb(168, 26, 26) ;
+            flex-wrap: wrap;
+            
+   
+        }
+
+        .card {
+            background-color: white;
+            width: 300px;
+            border-radius: 7px;
+            margin: 10px;
+        }
+
+        .image img {
+            width: 90%;
+            height: 50vh;
+            border-radius: 7%;
+            padding: 15px;
+
+        }
+
+        .capsules {
+            padding: 8px;
+        }
+
+        .capsules span {
+            border: 1px solid gray;
+            padding: 2px 6px;
+            border-radius: 7px;
+            font-size: 12px;
+            font-family: 'Baloo Bhai 2', sans-serif;
+        }
+
+        .content {
+            padding: 15px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .content h2 {
+            font-size: 16px;
+        }
+
+        .content p {
+            font-size: 14px;
+            color: gray;
+        }
+
+        .button {
+            text-align: center;
+            padding: 10px;
+        }
+
+        .button button {
+            padding: 10px 20px;
+            border-radius: 15px;
+            background-color: rgb(216, 236, 253);
+            color: rgb(14, 150, 234);
+            font-size: 16px;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.2s, color 0.2s;
+        }
+
+        .button button:hover {
+            background-color: rgb(194, 225, 246);
+            color: rgb(10, 136, 214);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                
+            }
+
+            .card {
+                width: 100%;
+                max-width: 100%;
+                
+            }
+            .image{
+                width: 100%;
+                padding-left: 3.4%;
+               
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="image">
+                <img src="https://www.newsday.com/_next/image?url=https%3A%2F%2Fcdn.newsday.com%2Fimage-service%2Fversion%2Fc%3AYTQzMzBiYjktNDRmMi00%3AYWRiY2Jk%2Fspcena.jpg%3Ff%3DLandscape%2B16%253A9%26w%3D770%26q=1&w=1920&q=80"
+                    alt="">
+            </div>
+            <div class="capsules">
+                <span>WWE Superstar</span>
+            </div>
+            <div class="content">
+                <h2>John Cena</h2>
+                <p>John Felix Anthony Cena was born on April 23, 1977 in West Newbury, Massachusetts to Carol Cena and
+                    John
+                    Joseph Cena. He is of Italian (father) and French-Canadian and English (mother) descent, and is the
+                    grandson of baseball player Tony Lupien.</p>
+            </div>
+            <div class="button">
+                <button>Read More</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="https://v6x8m2f6.rocketcdn.me/wp-content/uploads/2014/03/wwe-2011-randy-orton.jpg" alt="">
+            </div>
+            <div class="capsules">
+                <span>WWE Superstar</span>
+            </div>
+            <div class="content">
+                <h2>Randy Orton</h2>
+                <p>Randy Orton was born Randal Orton in April, 1980 in Knoxville, Tennessee. The oldest of three
+                    children, he's
+                    a third-generation pro wrestler from a family that includes father, 'Cowboy' Bob Orton, uncle Barry
+                    Orton
+                    and grandfather Bob Orton Sr.</p>
+            </div>
+            <div class="button">
+                <button>Read More</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="https://pbs.twimg.com/media/Alu22kjCQAA0KuH.jpg:large" alt="">
+            </div>
+            <div class="capsules">
+                <span>WWE Superstar</span>
+            </div>
+            <div class="content">
+                <h2>The Rock</h2>
+                <p>Dwayne Johnson, byname The Rock, (born May 2, 1972, Hayward, California, U.S.), American professional
+                    wrestler
+                    and actor whose charisma and athleticism made him a success in both fields. Johnson was born into a
+                    wrestling family.</p>
+            </div>
+            <div class="button">
+                <button>Read More</button>
+            </div>
+        </div>
+    </div>
+    <script>
+  window.addEventListener('load', () => {
+            const confirmed = confirm("Do you want to proceed to view WWE Superstar details?");
+            if (confirmed) {
+                // Show the WWE Superstar details by toggling the content
+                const buttons = document.querySelectorAll(".button button");
+                buttons.forEach((button, index) => {
+                    const content = document.querySelectorAll(".content")[index];
+                    content.classList.add("show-content");
+
+                    button.addEventListener("click", () => {
+                        content.classList.toggle("show-content");
+                    });
+                });
+            } else {
+                // Redirect to the 404 error page
+                window.location.href = "404.html";
+            }
+        });
+</script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Toggle Text Example</title>
+</head>
+<body>
+  <h1>Seehi Mathu</h1>
+ 
+  <button onclick="toggleText()">Click HERE</button>
+  <p id="demo">This is a letter to deeps</p>
+  
+  <script>
+    let clicked = false; // Initialize a variable to track the button state
+    
+    function toggleText() {
+      const buttonText = document.getElementsByTagName("button")[0];
+      const demoText = document.getElementById("demo");
+      
+      if (clicked) {
+        buttonText.textContent = "Click HERE"; // Change the button text
+        demoText.textContent = "Love u so much Deeps "; // Change the paragraph text
+      } else {
+        buttonText.textContent = "Again Click"; // Change the button text
+        demoText.textContent = "Bank open madu Iam wtg for long time"; // Change the paragraph text
+      }
+      
+      clicked = !clicked; // Toggle the state for the next click
+    }
+    console.log("heloo beauty");
+  </script>
+</body>
+</html>
